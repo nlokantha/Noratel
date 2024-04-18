@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -64,6 +65,13 @@ public class MainFragment extends Fragment {
             }
         });
 
+        binding.buttonSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customDialog();
+            }
+        });
+
     }
     public void dateAndTime(){
         Thread t = new Thread() {
@@ -91,5 +99,13 @@ public class MainFragment extends Fragment {
             }
         };
         t.start();
+    }
+
+    private void customDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        View alertDialog = inflater.inflate(R.layout.custom_dialog,null);
+        builder.setView(alertDialog);
+        builder.show();
     }
 }
