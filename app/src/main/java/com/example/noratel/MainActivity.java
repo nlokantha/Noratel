@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements LoginFragment.LoginFragmentListener {
+public class MainActivity extends AppCompatActivity implements LoginFragment.LoginFragmentListener, MainFragment.MainFragmentListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

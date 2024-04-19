@@ -14,7 +14,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/alert" />
+            android:src="@drawable/check2" />
 
         <TextView
             android:id="@+id/textView2"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Are You Sure?"
+            android:text="Complete Success!"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -49,13 +49,13 @@
                 android:id="@+id/buttonSelectNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:backgroundTint="#249689"
                 android:layout_marginStart="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_bg"
-                android:text="Confirm"
-                android:textColor="@color/white"/>
+                android:backgroundTint="#249689"
+                android:text="Select Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
         </LinearLayout>
 
     </LinearLayout>
